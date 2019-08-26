@@ -28,6 +28,10 @@ export default () => {
     const [messages, setMessages] = useImmer([]);
     const [online, setOnline] = useImmer([]);
 
+    const [nickname, setNickname] = useState("");
+    const [email, setEmail] = useState("");
+
+
     useEffect(()=>{
       socket.on('message que',(nick,message) => {
         setMessages(draft => {
@@ -132,6 +136,10 @@ export default () => {
             </form>
         </div>
       </div>
+
+      <script src="/__/firebase/6.4.2/firebase-app.js"></script>
+      <script src="/__/firebase/init.js"></script>
+
       </div>
     )
 };
