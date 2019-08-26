@@ -1,0 +1,53 @@
+
+.app-main {
+  width: 620px;
+  height: 450px;
+  margin-bottom: 0px;
+}
+
+.images {
+  width: 360px;
+  height: 450px;
+  float: left;
+  text-align: center;  /* align the inline(-block) elements horizontally */
+}
+
+.images:before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+img {
+  width: 346px;
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  float: left;
+}
+
+.date-post {
+  margin-bottom: 35px;
+}
+
+.product {
+  width: 250px;
+  position: relative;
+  /* width: 40%; */
+  /* height: 100%; */
+  /* top: 10%; */
+  /* left: 60%; */
+  float: left;
+}
+
+.desc {
+  height: 260px;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 15px;
+  color: #4E4E4E;
+  font-size: .71em;
+  line-height: 1.6em;
+  margin-right: 14px;
+  text-align: justify;
+}
